@@ -1,9 +1,7 @@
 // src/main.jsx
-
-import React from 'react';
-import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Login from 'AQUI A GENTE BOTA A PAGINA DE ROTA  DA PAG LOGIN EX: ./Main23/Login';
+import { createRoot } from 'react-dom/client';
 
 function AdminDashboard() {
   return <h2>Admin Dashboard</h2>;
@@ -25,4 +23,4 @@ function App() {
   );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+createRoot(<App />, document.getElementById('root'));

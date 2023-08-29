@@ -1,8 +1,8 @@
 #root {
-  max-width: 1280rem;
   margin: 0rem auto;
   padding: 2rem;
   text-align: center;
+  
 }
 
 .logo {
@@ -40,4 +40,222 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem; 
+}
+
+.centered-h1 {
+  font-size: 6rem;
+  text-align: center;
+  margin-top: -2rem;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-image: radial-gradient(
+    circle, rgb(3, 0, 0), rgb(22, 1, 1) 
+  );
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --gradient: linear-gradient(
+            to right,
+            rgb(255, 0, 0),    
+            rgb(255, 94, 0),  
+            rgb(255, 94, 0),
+            rgb(255, 0, 0)    
+        );
+}
+
+a {
+  font-weight: 500;
+  color: #ff6464;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 50rem;
+  min-height: 50rem;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0rem);
+  }
+  50% {
+      transform: translateY(0.3rem);
+  }
+}
+
+h1 {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: bounce 1s infinite;
+}
+
+.degrad{
+  background-color: #ff0000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+button {
+  border-radius: 0.6rem;
+  border: 0.1rem solid transparent;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #2c0101;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #ff6464;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #2c0101;
+  }
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+  margin: auto;
+  background-image: var(--gradient);
+  padding-bottom: 0.1rem;
+  border-radius: 0.4rem;
+}
+
+.header{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 0.1rem;
+}
+
+.underline{
+  width: 20rem;
+  height: 1rem;
+  background-color: #2c0101;
+  
+}
+
+.inputs{
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input{
+  display:flex;
+  align-items: center;
+  margin: auto;
+  width: 18rem;
+  height: 3rem;
+  background-color: #2c0101;
+  border-radius: 0.4rem;
+}
+
+.input img{
+  margin: 0px 30px;
+}
+
+.input input{
+  height: 3rem;
+  width: 20rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.forgot-password{
+  align-items: center;
+  margin-top: 1rem;
+  color:rgb(0, 0, 0);
+  font-size: 1.1rem;
+}
+
+.forgot-password span{
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.submit-container{
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18rem;
+  height: 2rem;
+  color: rgb(255, 102, 0);
+  background: rgb(22, 1, 1);
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  font-weight: 1rem;
+  cursor: pointer;
+}
+
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 10rem;
+  height: 3rem;
+  color: rgb(255, 102, 0);
+  background: rgb(22, 1, 1);
+  border-radius: 0.4rem;
+  font-size: 1.7rem;
+  font-weight: 1rem;
 }
