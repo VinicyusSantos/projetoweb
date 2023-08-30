@@ -1,6 +1,6 @@
 import express from 'express';
 
-export const routes = express.Router()
+export const obrasRoutes = express.Router()
 
 const obras = [
     {
@@ -16,7 +16,7 @@ const obras = [
 ]
 
 //visualização de obras especificas
-routes.post('/obras', (req, res) => {
+obrasRoutes.post('/obras', (req, res) => {
     const { id } = req.body;
 
     if (id >= 0 && id < obras.length) {
