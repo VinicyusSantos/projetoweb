@@ -1,3 +1,6 @@
+import PagAdm from "./AdmPage"
+import PagFuncionario from "./EmployeePage"
+
 function Login(){
     return <div className="container">
       <div className="header">
