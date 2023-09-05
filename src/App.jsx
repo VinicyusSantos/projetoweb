@@ -1,6 +1,8 @@
 import hammerLogo from './assets/hammer.svg';
 import './App.css';
-import Login from './components/Login.jsx';
+import App2 from './testeapp.jsx'
+import testando from './testemain';
+//import Login from './components/Login.jsx';
 
 function App() {
 
@@ -14,7 +16,26 @@ function App() {
         </div>
         <h1 className="centered-h1">AL MOSSAR</h1>
       </div>
-      <Login />
+      <div className="container">
+      <div className="header">
+        <div className="text">Sign In</div>
+        <div className="underline"></div>
+      </div>
+      <div className="inputs">
+        <div className="input">
+          <input type="email" placeholder="Email"/>
+        </div>
+      <div className="input">
+          <input type="password" placeholder="Senha"/>
+        </div>
+      </div>
+          <div className="forgot-password">
+            <span >Esqueci minha senha!</span>
+          </div>
+          <div className="submit-container">
+          <button onClick={testando} className="submit">SIGN IN</button>
+          </div>
+        </div>
     </div>
   );
 }
