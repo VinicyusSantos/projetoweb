@@ -1,7 +1,7 @@
 import hammerLogo from './assets/hammer.svg';
 import './App.css';
 import App2 from './testeapp.jsx'
-import testando from './testemain';
+import testando from './main';
 //import Login from './components/Login.jsx';
 
 function App() {
