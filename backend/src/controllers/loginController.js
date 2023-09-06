@@ -5,14 +5,14 @@ export const logincontroller = express.Router()
 const users = [
     {
         id: 0,
-        nome: "Vinicyus",
-        email: "vini@gmail.com",
+        nome: "ADM",
+        email: "adm@gmail.com",
         senha: 123 
     },
     {
         id: 1,
-        nome: "Daniel",
-        email: "deni@gmail.com",
+        nome: "FUNCIONARIO",
+        email: "funcionario@gmail.com",
         senha: 1234
     }
 ]

@@ -1,6 +1,7 @@
 import express from 'express'
 
 export const obrascontroller = express.Router()
+export const obrasadd = express.Router()
 
 const obras = [
     {
@@ -26,3 +27,25 @@ obrascontroller.post = (req, res) => {
         res.status(404).json({ error: 'Obra não encontrada' });
     }
 }
+
+//adicionando novas obras
+obrasadd.post = (req, res) => {
+    const { local, custo } = req.body;
+  
+    const novaObra = {
+      id: obras.length,
+      local,
+      custo,
+    };
+  
+    obras.push(novaObra);
+  
+    res.status(201).json(novaObra);
+  }
+  
+  
+  
+  
+  
+  
+  
