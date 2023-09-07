@@ -10,18 +10,28 @@ function App() {
 
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
+  const [error, setError] = useState('');
 
   const handleLogin = async (testando) => {
     testando.preventDefault();
 
     console.log(email, senha);
-
-    const response = await axios.post('http://localhost:3000/login',
-      JSON.stringify({email, senha}),
-      {
-        headers: { 'Content-Type' : ' application/json'}
-      }
-    );
+    
+    
+    try{
+      const response = await axios.post('http://localhost:3000/login',
+        JSON.stringify({email, senha}),
+        {
+          headers: { 'Content-Type' : ' application/json'}
+        }
+      );
+    } catch (error) {
+        if(!error?.response) {
+          setError('Erro ao acessar o servidor');    
+        } else if (error.response.status == 401) {
+          setError('Usuário ou senha inválidos')
+        }
+    }
   };
 
       
@@ -62,7 +72,9 @@ function App() {
           <button onClick={(testando) => handleLogin(testando)} className="submit">SIGN IN</button>
           </div>
         </div>
+        <p>{error}</p>
     </div>
+
   );
 }
 export default App;
