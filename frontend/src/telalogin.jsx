@@ -1,9 +1,33 @@
 import hammerLogo from './assets/hammer.svg';
 import './telalogin.css';
 import testando from './inicialmain';
+import { useState } from 'react';
+import axios from 'axios';
 //import Login from './components/Login.jsx';
 
 function App() {
+  
+
+  const [email, setEmail] = useState('');
+  const [senha, setSenha] = useState('');
+
+  const handleLogin = async (testando) => {
+    testando.preventDefault();
+
+    console.log(email, senha);
+
+    const response = await axios.post('http://localhost:3000/login',
+      JSON.stringify({email, senha}),
+      {
+        headers: { 'Content-Type' : ' application/json'}
+      }
+    );
+  };
+
+      
+
+
+
   return (
     <div className="app-container">
       <div>
@@ -21,17 +45,21 @@ function App() {
       </div>
       <div className="inputs">
         <div className="input">
-          <input type="email" placeholder="Email"/>
+          <input type="email" placeholder="Email"
+          onChange = {(testando) => setEmail(testando.target.value)}
+          />
         </div>
       <div className="input">
-          <input type="password" placeholder="Senha"/>
+          <input type="password" placeholder="Senha"
+            onChange = {(testando) => setSenha(testando.target.value)}
+          />
         </div>
       </div>
           <div className="forgot-password">
             <span >Esqueci minha senha!</span>
           </div>
           <div className="submit-container">
-          <button onClick={testando} className="submit">SIGN IN</button>
+          <button onClick={(testando) => handleLogin(testando)} className="submit">SIGN IN</button>
           </div>
         </div>
     </div>

@@ -7,13 +7,13 @@ const users = [
         id: 0,
         nome: "ADM",
         email: "adm@gmail.com",
-        senha: 123 
+        senha: '123' 
     },
     {
         id: 1,
         nome: "FUNCIONARIO",
         email: "funcionario@gmail.com",
-        senha: 1234
+        senha: '1234'
     }
 ]
 
