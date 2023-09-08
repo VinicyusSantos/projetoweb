@@ -10,8 +10,8 @@ function Login() {
   const [senha, setSenha] = useState('');
   const [error, setError] = useState('');
 
-  const handleLogin = async (testando) => {
-    testando.preventDefault();
+  const handleLogin = async (Evento) => {
+    Evento.preventDefault();
 
     console.log(email, senha);
     
@@ -54,12 +54,12 @@ function Login() {
       <div className="inputs">
         <div className="input">
           <input type="email" placeholder="Email"
-          onChange = {(testando) => setEmail(testando.target.value)}
+          onChange = {(Evento) => setEmail(Evento.target.value)}
           />
         </div>
       <div className="input">
           <input type="password" placeholder="Senha"
-            onChange = {(testando) => setSenha(testando.target.value)}
+            onChange = {(Evento) => setSenha(Evento.target.value)}
           />
         </div>
       </div>
@@ -67,7 +67,7 @@ function Login() {
             <span >Esqueci minha senha!</span>
           </div>
           <div className="submit-container">
-          <button onClick={(testando) => handleLogin(testando)} className="submit">SIGN IN</button>
+          <button onClick={(Evento) => handleLogin(Evento)} className="submit">SIGN IN</button>
           </div>
         </div>
         <p>{error}</p>
