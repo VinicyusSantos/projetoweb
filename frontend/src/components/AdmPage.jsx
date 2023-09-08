@@ -1,5 +1,8 @@
-function PagAdm(){
+// About.js
+import React from 'react';
 
+function Adm() {
+  return <div>Sobre Nós</div>;
 }
 
-export default PagAdm;
+export default Adm;

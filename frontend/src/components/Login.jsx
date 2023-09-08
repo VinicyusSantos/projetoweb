@@ -1,11 +1,9 @@
-import hammerLogo from './assets/hammer.svg';
-import './telalogin.css';
-import testando from './inicialmain';
+import hammerLogo from '../assets/hammer.svg';
+import '../styles/Login.css';
 import { useState } from 'react';
 import axios from 'axios';
-//import Login from './components/Login.jsx';
 
-function App() {
+function Login() {
   
 
   const [email, setEmail] = useState('');
@@ -77,4 +75,4 @@ function App() {
 
   );
 }
-export default App;
+export default Login;

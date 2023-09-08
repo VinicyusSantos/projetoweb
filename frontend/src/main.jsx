@@ -1,9 +1,32 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './telalogin.jsx'
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from 'react-router-dom';
+
+import Login from "./components/Login.jsx"
+import Employee from "./components/EmployeePage.jsx";
+import Adm from "./components/AdmPage.jsx";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Login />,
+  },
+  {
+    path: "Employee",
+    element: <Employee />,
+  },
+  {
+    path: "Adm",
+    element: <Adm />,
+  }
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
-)
+);

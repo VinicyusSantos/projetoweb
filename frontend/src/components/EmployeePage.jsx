@@ -1,5 +1,8 @@
-function PagFuncionario(){
+// Home.js
+import React from 'react';
 
+export function Employee() {
+  return <div>Página uepa</div>;
 }
 
-export default PagFuncionario;
+export default Employee;
