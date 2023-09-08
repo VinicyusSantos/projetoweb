@@ -2,6 +2,7 @@ import express from 'express'
 
 export const obrascontroller = express.Router()
 export const obrasadd = express.Router()
+export const obrasremove = express.Router()
 
 const obras = [
     {
@@ -42,10 +43,24 @@ obrasadd.post = (req, res) => {
   
     res.status(201).json(novaObra);
   }
-  
-  
-  
-  
-  
-  
-  
+
+//removendo obras
+obrasremove.delete = (req, res) => {
+
+    const obraId = parseInt(req.params.id);
+
+    // Vendo se a obra com o ID digitado existe
+    const obraIndex = obras.findIndex((obra) => obra.id === obraId);
+
+    if (obraIndex === -1) {
+        res.status(404).json({ error: 'Obra não encontrada' });
+    } else {
+        // Removendo obra e atualizando o id
+        obras.splice(obraIndex, 1);
+        res.status(200).json({ message: `Obra com ID ${obraId} foi excluída` });
+
+        for (let i = 0; i < obras.length; i++) {
+            obras[i].id = i;
+        }
+    }
+}
