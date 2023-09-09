@@ -8,7 +8,7 @@ import {
 
 import Login from "./components/Login.jsx"
 import Employee from "./components/EmployeePage.jsx";
-import Adm from "./components/AdmPage.jsx";
+import AdminPage from "./components/AdmPage.jsx"
 
 const router = createBrowserRouter([
   {
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
   },
   {
     path: "Adm",
-    element: <Adm />,
+    element: <AdminPage />,
   }
 ]);
 
