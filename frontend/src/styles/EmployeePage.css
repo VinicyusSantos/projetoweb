@@ -1,0 +1,63 @@
+/* CSS */
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    background-image: radial-gradient(circle, rgb(3, 0, 0), rgb(22, 1, 1));
+    min-height: 100vh;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.centered-h1 {
+    font-size: 6rem;
+    text-align: center;
+    margin-top: -2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 94, 0), rgb(255, 94, 0), rgb(255, 0, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: bounce 1s infinite;
+}
+
+.logo {
+    height: 7rem;
+    padding: 1rem;
+    will-change: filter;
+    transition: filter 300ms;
+    filter: drop-shadow(0 0 2em rgb(184, 1, 1));
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em rgb(255, 0, 0));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .logo-spin {
+        animation: logo-spin infinite 3s linear;
+    }
+}
+
+a {
+    font-weight: 500;
+    color: #ff6464;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: #535bf2;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0rem);
+    }
+    50% {
+        transform: translateY(0.3rem);
+    }
+}
