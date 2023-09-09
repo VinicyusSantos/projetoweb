@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import hammerLogo from '../assets/hammer.svg';
 import '../styles/AdmPage.css';
 
@@ -57,7 +57,7 @@ function AdminPage() {
         <div className="order-list">
           <h2>Lista de Pedidos</h2>
           <ul>
-            {/* Mapeie os dados de 'orders' aqui para preencher a lista de pedidos */}
+            {/* Mapear aqui os dados de 'orders' aqui para preencher a lista de pedidos */}
           </ul>
         </div>
       </div>
