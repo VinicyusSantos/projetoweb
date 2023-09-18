@@ -9,6 +9,7 @@ import {
 import Login from "./components/Login.jsx"
 import Employee from "./components/EmployeePage.jsx";
 import AdminPage from "./components/AdmPage.jsx"
+import Logado from './components/Logado.jsx';
 
 const router = createBrowserRouter([
   {
@@ -16,12 +17,8 @@ const router = createBrowserRouter([
     element: <Login />,
   },
   {
-    path: "Employee",
-    element: <Employee />,
-  },
-  {
-    path: "Adm",
-    element: <AdminPage />,
+    path: "logado",
+    element: <Logado />,
   }
 ]);
 

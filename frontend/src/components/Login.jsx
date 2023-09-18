@@ -2,6 +2,7 @@ import hammerLogo from '../assets/hammer.svg';
 import '../styles/Login.css';
 import { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
   
@@ -9,12 +10,12 @@ function Login() {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   const handleLogin = async (Evento) => {
     Evento.preventDefault();
 
     console.log(email, senha);
-    
     
     try{
       const response = await axios.post('http://localhost:3000/login',
@@ -23,6 +24,10 @@ function Login() {
           headers: { 'Content-Type' : ' application/json'}
         }
       );
+      const identificacao = response.data.id
+      console.log(identificacao)
+      navigate('/logado')
+
     } catch (error) {
         if(!error?.response) {
           setError('Erro ao acessar o servidor');    
