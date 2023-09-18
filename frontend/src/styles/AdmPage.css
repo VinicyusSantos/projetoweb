@@ -97,3 +97,117 @@ body {
     transform: translateY(0.3rem);
   }
 }
+
+.obras{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: flex;
+  height: flex;
+  color: rgb(255, 102, 0);
+  background: rgb(22, 1, 1);
+  border-radius: 0.4rem;
+  font-size: 1.5rem;
+  font-weight: 1rem;
+  cursor: pointer;
+  margin-bottom: 0.7rem;
+  margin-top: 0.7rem;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+}
+
+.config{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: flex;
+  height: flex;
+  color: rgb(255, 102, 0);
+  background: rgb(22, 1, 1);
+  border-radius: 0.4rem;
+  font-size: 1.5rem;
+  font-weight: 1rem;
+  cursor: pointer;
+  margin-bottom: 0.7rem;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+}
+
+.indicad{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: flex;
+  height: flex;
+  color: rgb(255, 102, 0);
+  background: rgb(22, 1, 1);
+  border-radius: 0.4rem;
+  font-size: 1.5rem;
+  font-weight: 1rem;
+  cursor: pointer;
+  margin-bottom: 0.7rem;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+}
+
+.func{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: flex;
+  height: flex;
+  color: rgb(255, 102, 0);
+  background: rgb(22, 1, 1);
+  border-radius: 0.4rem;
+  font-size: 1.5rem;
+  font-weight: 1rem;
+  cursor: pointer;
+  margin-bottom: 0.7rem;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+}
+
+.solic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: flex;
+  height: flex;
+  color: rgb(255, 102, 0);
+  background: rgb(22, 1, 1);
+  border-radius: 0.4rem;
+  font-size: 1.5rem;
+  font-weight: 1rem;
+  cursor: pointer;
+  margin-bottom: 0.7rem;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+}
+
+.decis{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: flex;
+  height: flex;
+  color: rgb(255, 102, 0);
+  background: rgb(22, 1, 1);
+  border-radius: 0.4rem;
+  font-size: 1.5rem;
+  font-weight: 1rem;
+  cursor: pointer;
+  margin-bottom: 0.7rem;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+}
+
+.containerr{
+  display:flex;
+  width: 24rem;
+  height: flex;
+  flex-direction: column;
+  margin: auto;
+  background-image: var(--gradient);
+  padding-bottom: 0.1rem;
+  border-radius: 0.4rem;
+}
