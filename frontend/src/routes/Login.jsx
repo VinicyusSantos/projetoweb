@@ -6,7 +6,6 @@ import { useNavigate } from 'react-router-dom';
 
 function Login() {
   
-
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const [error, setError] = useState('');
@@ -26,6 +25,8 @@ function Login() {
       );
       const identificacao = response.data.id
       console.log(identificacao)
+
+      localStorage.setItem('identificacao', identificacao)
       navigate('/logado')
 
     } catch (error) {
@@ -36,10 +37,6 @@ function Login() {
         }
     }
   };
-
-      
-
-
 
   return (
     <div className="app-container">
