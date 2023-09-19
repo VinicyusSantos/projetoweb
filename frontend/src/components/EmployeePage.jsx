@@ -1,7 +1,6 @@
-import React from 'react';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import hammerLogo from '../assets/hammer.svg';
+import perfilLogo from '../assets/perfilLogo.svg';
 import '../styles/EmployeePage.css';
 
 function EmployeePage() {
@@ -10,22 +9,25 @@ function EmployeePage() {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    // Aqui vai ficar a chamadas do API do backend para obter os dados.
-    // Atualizar tambem os estados 'works', 'employees' e 'orders' com os dados recebidos do backend.
+    // Aqui vai ficar a chamada da API do backend para obter os dados.
+    // Atualize também os estados 'works', 'employees' e 'orders' com os dados recebidos do backend.
   }, []);
 
   return (
     <div>
-      <div className="app-containerr">
+      <div className="app-container">
         <a href="/" rel="noopener noreferrer">
           <img src={hammerLogo} className="logo hammer" alt="Hammer logo" />
         </a>
-        <h1 className="centered-h11">Página de Funcionário</h1>
+        <h1 className="centered-h1">Página de Funcionário</h1>
       </div>
-      <div className="containerrr">
+      <div className="container">
         <div className="obras">Obras</div>
         <div className="solic">Solicitações de funcionários</div>
-        </div>
+      </div>
+      <div>
+        <img src={perfilLogo} className="logo perfil" alt="Perfil logo" />
+      </div>
     </div>
   );
 }
