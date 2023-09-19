@@ -9,7 +9,7 @@ import {
 import Login from "./routes/Login.jsx"
 import Logado from './routes/Logado.jsx';
 import Info from './routes/informacao.jsx';
-import ObraFuncionario from './components/ObraFuncionario.jsx';
+import ObraFuncionario from './components/infoemploye/ObraFuncionario.jsx';
 
 const router = createBrowserRouter([
   {
