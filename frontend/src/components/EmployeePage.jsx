@@ -16,7 +16,7 @@ function EmployeePage() {
         <a href="/" rel="noopener noreferrer">
           <img src={hammerLogo} className="logo hammer" alt="Hammer logo" />
         </a>
-        <h1 className="centered-h1">Página de Funcionário</h1>
+        <h1 className="centered-h1">FUNCIONÁRIO</h1>
       </div>
       <div className="containerrr">
         <button className="obras">Obras</button>

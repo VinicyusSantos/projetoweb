@@ -19,7 +19,7 @@ function AdminPage() {
         <a href="/" rel="noopener noreferrer">
           <img src={hammerLogo} className="logo hammer" alt="Hammer logo" />
         </a>
-        <h1 className="centered-h1">Página Administrativa</h1>
+        <h1 className="centered-h1">ADMINISTRADOR</h1>
       </div>
       <div className="containerr">
         <button className="obras">Obras</button>
