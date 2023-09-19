@@ -1,63 +1,147 @@
-/* CSS */
+/* AdminPage.css */
 
-.app-container {
+.app-containerr {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
-    background-image: radial-gradient(circle, rgb(3, 0, 0), rgb(22, 1, 1));
-    min-height: 100vh;
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    color: rgba(255, 255, 255, 0.87);
-}
-
-.centered-h1 {
+  }
+  
+  .centered-h11 {
     font-size: 6rem;
     text-align: center;
     margin-top: -2rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 94, 0), rgb(255, 94, 0), rgb(255, 0, 0));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: bounce 1s infinite;
-}
-
-.logo {
+  }
+  
+  .logo {
     height: 7rem;
     padding: 1rem;
     will-change: filter;
     transition: filter 300ms;
     filter: drop-shadow(0 0 2em rgb(184, 1, 1));
-}
-
-.logo:hover {
+  }
+  
+  .logo:hover {
     filter: drop-shadow(0 0 2em rgb(255, 0, 0));
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .logo-spin {
-        animation: logo-spin infinite 3s linear;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(1) .logo {
+      animation: logo-spin infinite 3s linear;
     }
-}
-
-a {
+  }
+  
+  h1 {
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: bounce 1s infinite;
+  }
+  
+  .card {
+    padding: 2em;
+  }
+  
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-image: radial-gradient(circle, rgb(3, 0, 0), rgb(22, 1, 1));
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  
+    --gradient: linear-gradient(
+      to right,
+      rgb(255, 0, 0),
+      rgb(255, 94, 0),
+      rgb(255, 94, 0),
+      rgb(255, 0, 0)
+    );
+  }
+  
+  a {
     font-weight: 500;
     color: #ff6464;
     text-decoration: inherit;
-}
-
-a:hover {
+  }
+  
+  a:hover {
     color: #535bf2;
-}
-
-@keyframes bounce {
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 50rem;
+    min-height: 50rem;
+  }
+  
+  @keyframes bounce {
     0%, 100% {
-        transform: translateY(0rem);
+      transform: translateY(0rem);
     }
     50% {
-        transform: translateY(0.3rem);
+      transform: translateY(0.3rem);
     }
-}
+  }
+  
+  .obras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: flex;
+    height: flex;
+    color: rgb(255, 102, 0);
+    background: rgb(22, 1, 1);
+    border-radius: 0.4rem;
+    font-size: 1.5rem;
+    font-weight: 1rem;
+    cursor: pointer;
+    margin-bottom: 0.7rem;
+    margin-top: 0.7rem;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+  }
+  
+  
+ 
+  .solic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: flex;
+    height: flex;
+    color: rgb(255, 102, 0);
+    background: rgb(22, 1, 1);
+    border-radius: 0.4rem;
+    font-size: 1.5rem;
+    font-weight: 1rem;
+    cursor: pointer;
+    margin-bottom: 0.7rem;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+  }
+  
+  .containerrr{
+    display:flex;
+    width: 24rem;
+    height: flex;
+    flex-direction: column;
+    margin: auto;
+    background-image: var(--gradient);
+    padding-bottom: 0.1rem;
+    border-radius: 0.4rem;
+  }
