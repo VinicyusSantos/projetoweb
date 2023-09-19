@@ -195,4 +195,29 @@ body {
   background-image: var(--gradient);
   padding-bottom: 0.1rem;
   border-radius: 0.4rem;
+  margin-bottom: 3rem;
 }
+
+
+.containerrrr{
+  display:flex;
+  width: 32rem;
+  height: flex;
+  flex-direction: column;
+  background-image: var(--gradient);
+  padding-bottom: 0.1rem;
+  border-radius: 1rem;
+  margin: auto;
+}
+
+.logoperfil{
+  display: flex;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  margin-left: 1rem;
+  flex-direction: column;
+  background: transparent;
+  width: 30rem;
+  height: 20rem;
+}
+

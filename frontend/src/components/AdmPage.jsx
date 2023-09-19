@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import hammerLogo from '../assets/hammer.svg';
 import '../styles/AdmPage.css';
-import perfilLogo from '../assets/perfilLogo.svg';
+import perfilLogo from '../assets/perfilLogo.png';
 
 function AdminPage() {
 
@@ -27,8 +27,10 @@ function AdminPage() {
         <button className="func">Funcionários</button>
         <button className="solic">Solicitações de funcionários</button>
         <button className="decis">Decisões</button>
-        </div>
-        <img src={perfilLogo} className="logo perfil" alt="Perfil logo" />
+      </div>
+      <div className="containerrrr">
+        <img src={perfilLogo} className="logoperfil" alt="Perfil logo" />
+      </div>
     </div>
   );
 }
