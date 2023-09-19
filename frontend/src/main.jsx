@@ -9,6 +9,7 @@ import {
 import Login from "./routes/Login.jsx"
 import Logado from './routes/Logado.jsx';
 import Info from './routes/informacao.jsx';
+import ObraFuncionario from './components/ObraFuncionario.jsx';
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,11 @@ const router = createBrowserRouter([
   {
     path: "info",
     element: <Info />,
-  }
+  },
+  {
+    path: "obras",
+    element: <ObraFuncionario />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
