@@ -5,9 +5,7 @@ import hammerLogo from '../assets/hammer.svg';
 import '../styles/EmployeePage.css';
 
 function EmployeePage() {
-  const [works, setWorks] = useState([]);
-  const [employees, setEmployees] = useState([]);
-  const [orders, setOrders] = useState([]);
+
 
   useEffect(() => {
     // Aqui vai ficar a chamadas do API do backend para obter os dados.
@@ -23,8 +21,8 @@ function EmployeePage() {
         <h1 className="centered-h11">Página de Funcionário</h1>
       </div>
       <div className="containerrr">
-        <div className="obras">Obras</div>
-        <div className="solic">Solicitações de funcionários</div>
+        <button className="obras">Obras</button>
+        <button className="solic">Solicitações de funcionários</button>
         </div>
     </div>
   );

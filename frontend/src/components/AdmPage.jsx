@@ -5,9 +5,7 @@ import hammerLogo from '../assets/hammer.svg';
 import '../styles/AdmPage.css';
 
 function AdminPage() {
-  const [works, setWorks] = useState([]);
-  const [employees, setEmployees] = useState([]);
-  const [orders, setOrders] = useState([]);
+
 
   useEffect(() => {
     // Aqui vai ficar a chamadas do API do backend para obter os dados.
@@ -23,12 +21,11 @@ function AdminPage() {
         <h1 className="centered-h1">Página Administrativa</h1>
       </div>
       <div className="containerr">
-        <div className="obras">Obras</div>
-        <div className="config">Configurações do site</div>
-        <div className="indicad">Indicadores gráficos</div>
-        <div className="func">Funcionários</div>
-        <div className="solic">Solicitações de funcionários</div>
-        <div className="decis">Decisões</div>
+        <button className="obras">Obras</button>
+        <button className="indicad">Indicadores gráficos</button>
+        <button className="func">Funcionários</button>
+        <button className="solic">Solicitações de funcionários</button>
+        <button className="decis">Decisões</button>
         </div>
     </div>
   );
