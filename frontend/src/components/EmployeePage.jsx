@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import hammerLogo from '../assets/hammer.svg';
-import perfilLogo from '../assets/perfilLogo.svg';
 import '../styles/EmployeePage.css';
-
 function EmployeePage() {
   const [works, setWorks] = useState([]);
   const [employees, setEmployees] = useState([]);
@@ -26,7 +24,7 @@ function EmployeePage() {
         <div className="solic">Solicitações de funcionários</div>
       </div>
       <div>
-        <img src={perfilLogo} className="logo perfil" alt="Perfil logo" />
+        
       </div>
     </div>
   );

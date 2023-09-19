@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import hammerLogo from '../assets/hammer.svg';
 import '../styles/AdmPage.css';
+import perfilLogo from '../assets/perfilLogo.svg';
 
 function AdminPage() {
   const [works, setWorks] = useState([]);
@@ -28,8 +29,9 @@ function AdminPage() {
         <div className="indicad">Indicadores gráficos</div>
         <div className="func">Funcionários</div>
         <div className="solic">Solicitações de funcionários</div>
-        <div className="decis">Decisões</div>
+        <div className="decis">Decisões</div> 
         </div>
+        <img src={perfilLogo} className="logo perfil" alt="Perfil logo" />
     </div>
   );
 }
