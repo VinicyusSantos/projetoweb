@@ -2,6 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 
 export function ObrasAdm(){
-    return <div></div>
+    return <div>obrasadm</div>
 }
 export default ObrasAdm

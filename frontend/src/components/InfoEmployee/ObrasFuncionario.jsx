@@ -2,6 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 
 export function ObrasFuncionario(){
-    return <div>...</div>
+    return <div>Obrasfuncionario</div>
 }
 export default ObrasFuncionario

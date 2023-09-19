@@ -2,6 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 
 export function Funcionarios(){
-    return <div></div>
+    return <div>funcionarios</div>
 }
 export default Funcionarios

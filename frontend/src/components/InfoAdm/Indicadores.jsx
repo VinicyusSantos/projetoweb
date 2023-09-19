@@ -2,6 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 
 export function Indicadores(){
-    return <div></div>
+    return <div>indicadores</div>
 }
 export default Indicadores
