@@ -8,6 +8,7 @@ import {
 
 import Login from "./routes/Login.jsx"
 import Logado from './routes/Logado.jsx';
+import Info from './routes/informacao.jsx';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "logado",
     element: <Logado />,
+  },
+  {
+    path: "info",
+    element: <Info />,
   }
 ]);
 
