@@ -38,6 +38,7 @@ export function ObrasAdm(){
     return (
 
     <div className='App'>
+      <h1>QUADRO DE OBRAS</h1>
         <Card
         title='Torre Eiffel'
         imageUrl='https://f.i.uol.com.br/fotografia/2019/05/21/15584836365ce492b47c7c8_1558483636_3x2_rt.jpg'

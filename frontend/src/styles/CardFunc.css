@@ -1,4 +1,4 @@
-.card-container{
+.card-containerr{
     width: 30rem;
     overflow: hidden;
     box-shadow: 0rem 0rem 0.3rem 0.3rem;
@@ -17,13 +17,13 @@
     color: rgb(255, 0, 0);
 }
 
-.image-container img{
+.image-containerr img{
     overflow: hidden;
     margin: flex;
     height: 20rem;
 }
 
-.card-content{
+.card-contentr{
     margin: 1rem;
     margin-top: 0.3rem;
 }
@@ -105,7 +105,7 @@ p1{
     text-decoration: underline;
 }
 
-.card-title{
+.card-titler{
     margin-bottom: flex;
 
 }

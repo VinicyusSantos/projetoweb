@@ -3,18 +3,18 @@ import '/src/styles/CardFunc.css';
 
 function CardFunc({ title, imageUrl, body, atributo1, atributo2, atributo3, atributo4, atributo5 }) {
     return (
-        <div className='card-container'>
-            <div className="image-container">
+        <div className='card-containerr'>
+            <div className="image-containerr">
                 <img src={imageUrl} alt='' />
             </div>
-            <div className="card-content">
+            <div className="card-contentr">
                 <div className="card-title">
                     <h3>{title}</h3>
                 </div>
-                <div className="card-body">
+                <div className="card-bodyr">
                     <p>{body}</p>
                 </div>
-                <div className="atributo1">
+                <div className="atributo1r">
                     <p>{atributo1}</p>
                 </div>
                 <div className="atributo2">

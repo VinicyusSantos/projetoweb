@@ -4,6 +4,7 @@ import CardFunc from './Cards/CardFunc';
 export function Funcionarios(){
     return( 
         <div className = 'appo'>
+            <h1>QUADRO DE FUNCIONÁRIOS</h1>
             <CardFunc
              title='Hugo Alexsanderson'
              imageUrl='https://derivates.kicker.de/image/upload/c_crop,x_0,y_204,w_4000,h_2250/w_1000,q_auto/v1/2021/08/05/4ba7fc98-4aa4-4213-b742-9bd407fbb6ff.jpeg'
