@@ -1,3 +1,4 @@
+/* AdminPage.css */
 
 .app-containerr {
     display: flex;
@@ -114,14 +115,10 @@
     margin-left: 0.7rem;
     margin-right: 0.7rem;
   }
-
   
-  .checklist-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem; 
-    margin-top: 2rem; 
+  
+ 
+  .solic{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,12 +133,15 @@
     margin-bottom: 0.7rem;
     margin-left: 0.7rem;
     margin-right: 0.7rem;
-
   }
   
-  
-  .checklist-container input[type="checkbox"] {
-    margin-right: 1rem; 
-
-    
+  .containerrr{
+    display:flex;
+    width: 24rem;
+    height: flex;
+    flex-direction: column;
+    margin: auto;
+    background-image: var(--gradient);
+    padding-bottom: 0.1rem;
+    border-radius: 0.4rem;
   }
