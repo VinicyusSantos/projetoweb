@@ -12,22 +12,22 @@ function CardFunc({ title, imageUrl, body, atributo1, atributo2, atributo3, atri
                     <h3>{title}</h3>
                 </div>
                 <div className="card-bodyr">
-                    <p>{body}</p>
+                    <px>{body}</px>
                 </div>
                 <div className="atributo1">
-                    <p>{atributo1}</p>
+                    <pz>{atributo1}</pz>
                 </div>
                 <div className="atributo2">
-                    <p>{atributo2}</p>
+                    <pz>{atributo2}</pz>
                 </div>
                 <div className="atributo3">
-                    <p>{atributo3}</p>
+                    <pz>{atributo3}</pz>
                 </div>
                 <div className="atributo4">
-                    <p>{atributo4}</p>
+                    <pz>{atributo4}</pz>
                 </div>
                 <div className="atributo5">
-                    <p>{atributo5}</p>
+                    <pz>{atributo5}</pz>
                 </div>
             </div>
             

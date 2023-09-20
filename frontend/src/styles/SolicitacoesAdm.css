@@ -1,4 +1,4 @@
-.card-containert{
+.card-containertx{
     width: 30rem;
     overflow: hidden;
     box-shadow: 0rem 0rem 0.3rem 0.3rem;
@@ -12,18 +12,18 @@
     margin-bottom: 3rem;
 }
 
-.card-containert:hover{
+.card-containertx:hover{
     transform: scale(1,1);
     box-shadow: 0rem 0rem 0.7rem 0.7rem;
     color: rgb(255, 0, 0);
 }
 
-.image-containert img{
+.image-containertx img{
     overflow: hidden;
     height: 20rem;
 }
 
-.card-contentt{
+.card-contenttx{
     margin: 1rem;
     margin-top: 0.3rem;
 }
@@ -36,25 +36,25 @@ h3{
 
 }
 
-p{
+pl{
     margin:flex;
     padding: flex;
     color: rgb(255, 255, 255);
     font-size: 1.4rem;
 }
 
-.card-titlet{
+.card-titletx{
     margin-bottom: flex;
 
 }
 
-.btnt{
+.btntx{
     display: flex;
     justify-content: center;
 
 }
 
-.btnt button{
+.btntx button{
     padding: 0.5rem;
     background: rgb(133, 3, 3);
     border: none;
@@ -63,7 +63,7 @@ p{
     border-radius: 0.5rem;
 }
 
-.btnt button:hover{
+.btntx button:hover{
     filter: drop-shadow(0 0 2em rgb(192, 3, 3));
     transform: scale(1.1);
 }
@@ -92,7 +92,7 @@ a{
     }
 }
 
-.nomere{
+.nomerex{
     text-transform: uppercase;
     text-decoration: none;
     margin-top: 3rem;
@@ -100,7 +100,7 @@ a{
     box-shadow: 0rem 0rem 0.3rem 0.3rem;
 }
 
-pp{
+ppq{
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1.5rem;

@@ -3,19 +3,19 @@ import '/src/styles/Card.css';
 
 function Card({ title, imageUrl, body }) {
     return (
-        <div className='card-container'>
-            <div className="image-container">
+        <div className='card-containera'>
+            <div className="image-containera">
                 <img src={imageUrl} alt='' />
             </div>
-            <div className="card-content">
-                <div className="card-title">
+            <div className="card-contenta">
+                <div className="card-titlea">
                     <h3>{title}</h3>
                 </div>
-                <div className="card-body">
-                    <p>{body}</p>
+                <div className="card-bodya">
+                    <ppp>{body}</ppp>
                 </div>
             </div>
-            <div className='btn'>
+            <div className='btna'>
                 <button>
                     <a>
                         VEJA MAIS

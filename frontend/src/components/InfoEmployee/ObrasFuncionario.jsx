@@ -39,10 +39,10 @@ export function ObrasFuncionario() {
   return (
     <div>
       <div className='bemvindo'>
-        <h1> Bem vindo funcionário!!</h1>
+        <h1> QUADRO DE OBRAS (INDIVIDUAL)</h1>
       </div>
       <div className='texto'>
-        <p> Obra que você está trabalhando:</p>
+        <p> Obra que você está trabalhando: (HUGO) </p>
       </div>
       <div className='leparc'>
         <Card2
@@ -53,27 +53,27 @@ export function ObrasFuncionario() {
       <div className='checklist-container'>
         <div className='checklist-item'>
           <input type="checkbox" checked={first} onChange={() => handleChange('first')} />
-          <label>Planificar o novo terreno</label>
+          <label>Planificar novo terreno.</label>
         </div>
         <div className='checklist-item'>
           <input type="checkbox" checked={second} onChange={() => handleChange('second')} />
-          <label>Fazer a base da edificação</label>
+          <label>Construir base da edificação.</label>
         </div>
         <div className='checklist-item'>
           <input type="checkbox" checked={third} onChange={() => handleChange('third')} />
-          <label>Realizar o levantamento da edificação</label>
+          <label>Levantamento da edificação.</label>
         </div>
         <div className='checklist-item'>
           <input type="checkbox" checked={fourth} onChange={() => handleChange('fourth')} />
-          <label>Fazendo elevador</label>
+          <label>Construir elevador geral.</label>
         </div>
         <div className='checklist-item'>
           <input type="checkbox" value={fifth} onChange={() => handleChange('fifth')} />
-          <label>Área da piscina</label>
+          <label>Construir área da piscina.</label>
         </div>
         <div className='checklist-item'>
           <input type="checkbox" value={sixth} onChange={() => handleChange('sixth')} />
-          <label>Área do churrasco</label>
+          <label>Construir área do churrasco.</label>
         </div>
       </div>
     </div>

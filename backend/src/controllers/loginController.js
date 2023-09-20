@@ -11,8 +11,8 @@ const users = [
     },
     {
         id: 1,
-        nome: "FUNCIONARIO",
-        email: "funcionario@gmail.com",
+        nome: "HUGO",
+        email: "hugo@gmail.com",
         senha: '1234'
     }
 ]

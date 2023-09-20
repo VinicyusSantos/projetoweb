@@ -6,9 +6,11 @@
     color:rgb(160, 2, 2);
     border-radius: 1rem;
     background-color: rgb(20, 0, 0);
-    animation: slide-from-bottom-to-top 4s forwards;
+    animation: slide-from-left 4s forwards;
     display: inline-block;
-    margin-right: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+
 }
 
 .card-container:hover{
@@ -36,10 +38,12 @@ h3{
 }
 
 p{
-    margin:flex;
+    margin-right: auto;
+    margin-left: auto;
     padding: flex;
     color: rgb(255, 255, 255);
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+    animation: slide-from-left 4s forwards;
 }
 
 .card-title{
@@ -80,3 +84,12 @@ a{
       transform: translateY(0);
     }
   }
+
+  @keyframes slide-from-left {
+    from {
+        transform: translateX(-500%);
+    }
+    to {
+        transform: translateX(0);
+    }
+    }

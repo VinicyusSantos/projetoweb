@@ -1,4 +1,4 @@
-.card-container{
+.card-containera{
     width: 30rem;
     overflow: hidden;
     box-shadow: 0rem 0rem 0.3rem 0.3rem;
@@ -12,18 +12,18 @@
     margin-bottom: 3rem;
 }
 
-.card-container:hover{
+.card-containera:hover{
     transform: scale(1,1);
     box-shadow: 0rem 0rem 0.7rem 0.7rem;
     color: rgb(255, 0, 0);
 }
 
-.image-container img{
+.image-containera img{
     overflow: hidden;
     height: 20rem;
 }
 
-.card-content{
+.card-contenta{
     margin: 1rem;
     margin-top: 0.3rem;
 }
@@ -36,25 +36,25 @@ h3{
 
 }
 
-p{
+ppp{
     margin:flex;
     padding: flex;
     color: rgb(255, 255, 255);
     font-size: 1.4rem;
 }
 
-.card-title{
+.card-titlea{
     margin-bottom: flex;
 
 }
 
-.btn{
+.btna{
     display: flex;
     justify-content: center;
 
 }
 
-.btn button{
+.btna button{
     padding: 0.5rem;
     background: rgb(133, 3, 3);
     border: none;
@@ -63,7 +63,7 @@ p{
     border-radius: 0.5rem;
 }
 
-.btn button:hover{
+.btna button:hover{
     filter: drop-shadow(0 0 2em rgb(192, 3, 3));
     transform: scale(1.1);
 }

@@ -3,20 +3,20 @@ import '/src/styles/SolicitacoesAdm.css';
 
 function SolicitacoesJJ({ title, imageUrl, body, funcionario }) {
     return (
-        <div className='card-containert'>
-            <div className="image-containert">
+        <div className='card-containertx'>
+            <div className="image-containertx">
                 <img src={imageUrl} alt='' />
             </div>
-            <div className="card-contentt">
-                <div className="card-titlet">
+            <div className="card-contenttx">
+                <div className="card-titletx">
                     <h3>{title}</h3>
                 </div>
-                <div className="card-bodyt">
-                    <p>{body}</p>
+                <div className="card-bodytx">
+                    <pl>{body}</pl>
                 </div>
             </div>
-            <div className='nomere'>
-                    <pp>{funcionario}</pp>
+            <div className='nomerex'>
+                    <ppq>{funcionario}</ppq>
             </div>
         </div>
     );

@@ -12,7 +12,7 @@
     margin-bottom: 3rem;
 }
 
-.card-container:hover{
+.card-containerr:hover{
     transform: scale(1,1);
     box-shadow: 0rem 0rem 0.7rem 0.7rem;
     color: rgb(255, 0, 0);
@@ -37,19 +37,21 @@ h3{
 
 }
 
-p{
+px{
     margin:flex;
     padding: flex;
     color: rgb(255, 255, 255);
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 
-p1{
+pz{
     margin:0;
     padding: 0;
     color:rgb(255, 255, 255);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
