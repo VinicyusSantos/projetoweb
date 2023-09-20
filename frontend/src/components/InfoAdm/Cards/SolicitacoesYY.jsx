@@ -18,7 +18,7 @@ function SolicitacoesMM({ title, imageUrl, body }) {
             <div className='btn'>
                 <button>
                     <a>
-                        Funcionário: Miguel
+                        Funcionário: Yuri Lima
                     </a>
                 </button>
             </div>

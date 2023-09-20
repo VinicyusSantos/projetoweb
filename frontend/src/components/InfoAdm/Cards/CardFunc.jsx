@@ -1,7 +1,7 @@
 import React from 'react';
-import '/src/styles/SolicitacoesAdm.css';
+import '/src/styles/Card.css';
 
-function SolicitacoesJJ({ title, imageUrl, body }) {
+function CardFunc({ title, imageUrl, body }) {
     return (
         <div className='card-container'>
             <div className="image-container">
@@ -15,16 +15,9 @@ function SolicitacoesJJ({ title, imageUrl, body }) {
                     <p>{body}</p>
                 </div>
             </div>
-            <div className='btn'>
-                <button>
-                    <a>
-                        Funcionário: Joabe
-                    </a>
-                </button>
-            </div>
+            
         </div>
     );
 }
 
-
-export default SolicitacoesJJ;
+export default CardFunc;
