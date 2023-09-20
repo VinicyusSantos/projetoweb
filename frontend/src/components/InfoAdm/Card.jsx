@@ -1,5 +1,5 @@
 import React from 'react';
-import 'C:/Users/User/Desktop/almossar/projetoweb/frontend/src/styles/Card.css';
+import '/src/styles/Card.css';
 
 function Card({ title, imageUrl, body }) {
     return (
