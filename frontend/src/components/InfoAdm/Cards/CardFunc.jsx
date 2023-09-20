@@ -14,7 +14,7 @@ function CardFunc({ title, imageUrl, body, atributo1, atributo2, atributo3, atri
                 <div className="card-bodyr">
                     <p>{body}</p>
                 </div>
-                <div className="atributo1r">
+                <div className="atributo1">
                     <p>{atributo1}</p>
                 </div>
                 <div className="atributo2">
