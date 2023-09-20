@@ -9,6 +9,7 @@
     animation: slide-from-bottom-to-top 4s forwards;
     display: inline-block;
     margin-right: 3rem;
+    margin-bottom: 3rem;
 }
 
 .card-container:hover{

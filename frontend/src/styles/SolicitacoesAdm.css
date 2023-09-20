@@ -1,28 +1,29 @@
-.card-container{
+.card-containert{
     width: 30rem;
     overflow: hidden;
     box-shadow: 0rem 0rem 0.3rem 0.3rem;
     transition: 0.3s;
     color:rgb(160, 2, 2);
-    border-radius: 1rem;
+    border-radius: 0rem;
     background-color: rgb(20, 0, 0);
-    animation: slide-from-top-to-bottom 3s forwards;
+    animation: slide-from-left 4s forwards;
     display: inline-block;
     margin-right: 3rem;
+    margin-bottom: 3rem;
 }
 
-.card-container:hover{
+.card-containert:hover{
     transform: scale(1,1);
     box-shadow: 0rem 0rem 0.7rem 0.7rem;
     color: rgb(255, 0, 0);
 }
 
-.image-container img{
+.image-containert img{
     overflow: hidden;
     height: 20rem;
 }
 
-.card-content{
+.card-contentt{
     margin: 1rem;
     margin-top: 0.3rem;
 }
@@ -42,18 +43,18 @@ p{
     font-size: 1.4rem;
 }
 
-.card-title{
+.card-titlet{
     margin-bottom: flex;
 
 }
 
-.btn{
+.btnt{
     display: flex;
     justify-content: center;
 
 }
 
-.btn button{
+.btnt button{
     padding: 0.5rem;
     background: rgb(133, 3, 3);
     border: none;
@@ -62,7 +63,7 @@ p{
     border-radius: 0.5rem;
 }
 
-.btn button:hover{
+.btnt button:hover{
     filter: drop-shadow(0 0 2em rgb(192, 3, 3));
     transform: scale(1.1);
 }
@@ -70,6 +71,7 @@ p{
 a{
     text-transform: uppercase;
     text-decoration: none;
+    font-size: 1.5rem;
 }
 
 @keyframes slide-from-bottom-to-top {
@@ -80,3 +82,27 @@ a{
       transform: translateY(0);
     }
   }
+
+@keyframes slide-from-left {
+    from {
+        transform: translateX(-500%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.nomere{
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    box-shadow: 0rem 0rem 0.3rem 0.3rem;
+}
+
+pp{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
