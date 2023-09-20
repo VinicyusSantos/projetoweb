@@ -5,42 +5,49 @@ import '/src/styles/solicitacoesEmployee.css';
 import hammerLogo from '../../assets/hammer.svg';
 
 export function Solicicacoes() {
+  const [nome, setNome] = useState('');
   const [solici, setSolici] = useState('');
-  const navigate = useNavigate();
+  const [descricao, setDescricao] = useState(''); 
 
-
-  const handleSubmit = (evento) => {
-    evento.preventDefault(); 
-
-
-    axios.post('/api/enviar', { solici })
-      .then((response) => {
-
-        console.log('Enviado com sucesso:', response.data);
-      })
-      .catch((error) => {
-
-        console.error('Erro ao enviar:', error);
-      });
+  const handleSubmit = async (evento) => { 
+    evento.preventDefault();
+    console.log("clicou");
+    console.log(solici);
+    console.log(descricao)
+    console.log (nome)
   };
 
   return (
     <div>
       <div className="app-container">
-        <a href="/" rel="noopener noreferrer">
-          <img src={hammerLogo} className="logo hammer" alt="Hammer logo" />
-        </a>
-        <h1 className="centered-h1">Digite abaixo sua solicitação</h1>
+        <h1 className="cabecalho">Digite abaixo sua solicitação</h1>
       </div>
-      <div className="containerrr">
+      <div className="solicitacoes">
         <form onSubmit={handleSubmit}>
           <input
             type="text"
-            placeholder="Digite algo aqui"
-            value={solici}
-            onChange={(evento) => setSolici(evento.target.value)}
+            placeholder="Digite sua solicitação aqui"
+            onChange={(evento) => setSolici(evento.target.value)} 
           />
-          <button type="submit">Enviar</button>
+          <button type="submit" className="submit">Confirmar</button>
+        </form>
+      </div>
+      <div className='descricao'>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text" 
+            placeholder="Digite a descrição aqui"
+            onChange={(evento) => setDescricao(evento.target.value)} 
+          />
+        </form>
+      </div>
+      <div className='nome'>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text" 
+            placeholder="Ensira seu nome"
+            onChange={(evento) => setNome(evento.target.value)} 
+          />
         </form>
       </div>
     </div>
