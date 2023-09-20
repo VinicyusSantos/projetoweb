@@ -1,0 +1,141 @@
+.card-containerdec{
+    width: 30rem;
+    overflow: hidden;
+    box-shadow: 0rem 0rem 0.3rem 0.3rem;
+    transition: 0.3s;
+    color:rgb(160, 2, 2);
+    border-radius: 0rem;
+    background-color: rgb(20, 0, 0);
+    animation: slide-from-bottom-to-top 4s forwards;
+    display: inline-block;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    height: 50rem;
+}
+
+.card-containerdec:hover{
+    transform: scale(1,1);
+    box-shadow: 0rem 0rem 0.7rem 0.7rem;
+    color: rgb(255, 0, 0);
+}
+
+.image-containerdec img{
+    overflow: hidden;
+    height: 20rem;
+}
+
+.card-contentdec{
+    margin: 1rem;
+    margin-top: 0.3rem;
+}
+
+h3{
+    margin:flex;
+    padding: flex;
+    color: rgb(211, 7, 7);
+    font-size: 2.4rem;
+
+}
+
+ppp{
+    margin:flex;
+    padding: flex;
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+}
+
+.card-titledec{
+    margin-bottom: flex;
+
+}
+
+.btndec{
+    display: flex;
+    justify-content: center;
+
+}
+
+.btndec button{
+    padding: 0.5rem;
+    background: rgb(133, 3, 3);
+    border: none;
+    transition: 0.2s;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.btndec button:hover{
+    filter: drop-shadow(0 0 2em rgb(192, 3, 3));
+    transform: scale(1.1);
+}
+
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@keyframes slide-from-bottom-to-top {
+    0% {
+      transform: translateY(220%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.medidasbreakman{
+    
+    flex: 1; 
+    margin-top: -2rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    width: 30rem;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0rem 0rem 0.3rem 0.3rem;
+    margin-bottom: 10rem;
+    animation: slide-from-bottom-to-top 4s forwards;
+}
+
+.medidasbreakman:hover{
+    
+    transform: scale(1,1);
+    box-shadow: 0rem 0rem 0.7rem 0.7rem;
+    color: rgb(255, 255, 255);
+}
+
+.medidasleparc:hover{
+    
+    transform: scale(1,1);
+    box-shadow: 0rem 0rem 0.7rem 0.7rem;
+    color: rgb(255, 255, 255);
+}
+
+.medidasleparc {
+    flex: 1; 
+    margin-top: -2rem;
+    margin-right: 3rem;
+    margin-bottom: 10rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    width: 30rem;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0rem 0rem 0.3rem 0.3rem;
+    animation: slide-from-bottom-to-top 4s forwards;
+}
+
+.medidas{
+    display: flex;
+    flex-wrap: wrap;
+}
+li{
+    margin-bottom: 1rem;
+}
+
+pm{
+    text-transform: uppercase;
+    text-decoration: underline;
+}
