@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import SolicitacoesHH from './Cards/SolicitacoesHH';
+import Solicicacoes from '../InfoEmployee/Solicicacoes';
 
 export function Solicitacoes(){
     return( 

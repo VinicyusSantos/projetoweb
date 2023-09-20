@@ -26,7 +26,7 @@ export function Solicicacoes() {
         <form onSubmit={handleSubmit}>
           <input
             type="text"
-            placeholder="Digite sua solicitação aqui"
+            placeholder="Título da solicitação:"
             onChange={(evento) => setSolici(evento.target.value)} 
           />
           <button type="submit" className="submit">Confirmar</button>
@@ -36,7 +36,7 @@ export function Solicicacoes() {
         <form onSubmit={handleSubmit}>
           <input
             type="text" 
-            placeholder="Digite a descrição aqui"
+            placeholder="Descrição da solicitação:"
             onChange={(evento) => setDescricao(evento.target.value)} 
           />
         </form>
@@ -45,7 +45,7 @@ export function Solicicacoes() {
         <form onSubmit={handleSubmit}>
           <input
             type="text" 
-            placeholder="Ensira seu nome"
+            placeholder="Nome do funcionário:"
             onChange={(evento) => setNome(evento.target.value)} 
           />
         </form>
