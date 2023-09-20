@@ -3,7 +3,7 @@
     overflow: hidden;
     box-shadow: 0rem 0rem 0.3rem 0.3rem;
     transition: 0.3s;
-    color:rgb(160, 2, 2);
+    color:rgb(255, 255, 255);
     border-radius: 1rem;
     background-color: rgb(20, 0, 0);
     animation: slide-from-bottom-to-top 4s forwards;

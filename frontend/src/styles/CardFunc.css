@@ -1,0 +1,154 @@
+.card-container{
+    width: 30rem;
+    overflow: hidden;
+    box-shadow: 0rem 0rem 0.3rem 0.3rem;
+    transition: 0.3s;
+    color:rgb(160, 2, 2);
+    border-radius: 0rem;
+    background-color: rgb(20, 0, 0);
+    animation: slide-from-left 4s forwards;
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+.card-container:hover{
+    transform: scale(1,1);
+    box-shadow: 0rem 0rem 0.7rem 0.7rem;
+    color: rgb(255, 0, 0);
+}
+
+.image-container img{
+    overflow: hidden;
+    margin: flex;
+    height: 20rem;
+}
+
+.card-content{
+    margin: 1rem;
+    margin-top: 0.3rem;
+}
+
+h3{
+    margin-top: flex;
+    padding: flex;
+    color: rgb(211, 7, 7);
+    font-size: 2.4rem;
+
+}
+
+p{
+    margin:flex;
+    padding: flex;
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+}
+
+
+p1{
+    margin:0;
+    padding: 0;
+    color:rgb(255, 255, 255);
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.atributo1{
+    margin:0;
+    padding: 0;
+    color:rgb(255, 255, 255);
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: underline;
+}
+.atributo2{
+    margin:0;
+    padding: 0;
+    color:rgb(255, 255, 255);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: underline;
+}
+.atributo3{
+    margin:0;
+    padding: 0;
+    color:rgb(255, 255, 255);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: underline;
+}
+.atributo4{
+    margin:0;
+    padding: 0;
+    color:rgb(255, 255, 255);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: underline;
+}
+.atributo5{
+    margin:0;
+    padding: 0;
+    color:rgb(255, 255, 255);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: underline;
+}
+
+.card-title{
+    margin-bottom: flex;
+
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn button{
+    padding: 0.5rem;
+    background: rgb(133, 3, 3);
+    border: none;
+    transition: 0.2s;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.btn button:hover{
+    filter: drop-shadow(0 0 2em rgb(192, 3, 3));
+    transform: scale(1.1);
+}
+
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@keyframes slide-from-bottom-to-top {
+    0% {
+      transform: translateY(220%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+@keyframes slide-from-left {
+from {
+    transform: translateX(-500%);
+}
+to {
+    transform: translateX(0);
+}
+}
