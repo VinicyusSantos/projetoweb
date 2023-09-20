@@ -2,19 +2,32 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import '/src/styles/solicitacoesEmployee.css';
-import hammerLogo from '../../assets/hammer.svg';
+
 
 export function Solicicacoes() {
-  const [nome, setNome] = useState('');
-  const [solici, setSolici] = useState('');
-  const [descricao, setDescricao] = useState(''); 
+  const [solici, setSolici] = useState({
+    nome: '',
+    descricao: '',
+    solicitacao: '',
+  });
+
+  const navigate = useNavigate();
 
   const handleSubmit = async (evento) => { 
     evento.preventDefault();
-    console.log("clicou");
-    console.log(solici);
-    console.log(descricao)
-    console.log (nome)
+
+    try {
+      const response = await axios.post('', solici, {
+        headers: { 'Content-Type': 'application/json' }
+      });
+
+      console.log('', response.data);
+      
+      
+      navigate('/outra-pagina'); 
+    } catch (err) {
+      console.error('Erro ao enviar a solicitação:', err);
+    }
   };
 
   return (
@@ -24,30 +37,26 @@ export function Solicicacoes() {
       </div>
       <div className="solicitacoes">
         <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Título da solicitação:"
-            onChange={(evento) => setSolici(evento.target.value)} 
-          />
+          <textarea 
+            placeholder="Insira seu nome" 
+            required 
+            value={solici.nome} 
+            onChange={(e) => setSolici({ ...solici, nome: e.target.value })}
+          /> 
+          <textarea 
+            placeholder="Qual item você deseja solicitar?" 
+            required 
+            value={solici.solicitacao} 
+            onChange={(e) => setSolici({ ...solici, solicitacao: e.target.value })}
+          /> 
+          <textarea 
+            placeholder="Descreva o porquê você deseja este item" 
+            required 
+            value={solici.descricao} 
+            onChange={(e) => setSolici({ ...solici, descricao: e.target.value })}
+          /> 
+            
           <button type="submit" className="submit">Confirmar</button>
-        </form>
-      </div>
-      <div className='descricao'>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text" 
-            placeholder="Descrição da solicitação:"
-            onChange={(evento) => setDescricao(evento.target.value)} 
-          />
-        </form>
-      </div>
-      <div className='nome'>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text" 
-            placeholder="Nome do funcionário:"
-            onChange={(evento) => setNome(evento.target.value)} 
-          />
         </form>
       </div>
     </div>
