@@ -7,15 +7,29 @@ export const obrasremove = express.Router()
 const obras = [
     {
         id: 0,
-        local: 'Parque Recife',
-        custo: '50.000'
+        nome: 'Torre Eiffel',
     },
     {
         id: 1,
-        local: 'Escola',
-        custo: '150.000'
+        nome: 'Rogerios',
+    },
+    {
+        id: 2,
+        nome: 'Mansão AW',
+    },
+    {
+        id: 3,
+        nome: 'Le Parc',
+    },
+    {
+        id: 4,
+        nome: 'Breakman',
     }
 ]
+
+obrascontroller.get = (req, res) => {
+    res.send(obras)
+}
 
 //visualização de obras especificas
 obrascontroller.post = (req, res) => {

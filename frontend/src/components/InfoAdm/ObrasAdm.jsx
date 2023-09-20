@@ -1,8 +1,40 @@
 import React, { useState, useEffect } from 'react';
 import Card from './Card';
+import axios from 'axios';
 
 
 export function ObrasAdm(){
+    const [nomeObra1, setnomeObra1] = useState([]);
+    const [nomeObra2, setnomeObra2] = useState([]);
+    const [nomeObra3, setnomeObra3] = useState([]);
+    const [nomeObra4, setnomeObra4] = useState([]);
+    const [nomeObra5, setnomeObra5] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://localhost:3000/dados')
+      .then(function (response) {
+        const obras = response.data;
+        const aux1 = obras.find(obra => obra.nome === 'Torre Eiffel');
+        setnomeObra1(aux1.nome);
+
+        const aux2 = obras.find(obra => obra.nome === 'Rogerios');
+        setnomeObra2(aux2.nome);
+
+        const aux3 = obras.find(obra => obra.nome === 'Mansão AW');
+        setnomeObra3(aux3.nome);
+
+        const aux4 = obras.find(obra => obra.nome === 'Le Parc');
+        setnomeObra4(aux4.nome);
+
+        const aux5 = obras.find(obra => obra.nome === 'Breakman');
+        setnomeObra5(aux5.nome);
+
+      })
+      .catch(function (error) {
+        console.error(error);
+      });
+  }, []);
+
     return (
 
     <div className='App'>
