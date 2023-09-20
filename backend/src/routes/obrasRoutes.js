@@ -5,6 +5,7 @@ import { obrasremove } from '../controllers/obrasController.js';
 
 export const obrasRoutes = express.Router()
 
+obrasRoutes.get('/dados', obrascontroller.get)
 obrasRoutes.post('/obras', obrascontroller.post);
 obrasRoutes.post('/adicionar', obrasadd.post)
 obrasRoutes.delete('/excluir/:id', obrasremove.delete)
