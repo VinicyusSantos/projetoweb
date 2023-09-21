@@ -35,10 +35,10 @@ export function Solicitacoes() {
         funcionario='Funcionário: YURI LIMA'
       />
       <SolicitacoesHH
-        title=""
+        title="?"
         imageUrl=''
-        body=''
-        funcionario='Funcionário: HUGO ALEXSANDERSON'
+        body='?'
+        funcionario='Funcionário: ?'
       />
     </div>
   );

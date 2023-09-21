@@ -36,6 +36,13 @@ h3{
 
 }
 
+pam{
+    margin:flex;
+    padding: flex;
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+}
+
 ppp{
     margin:flex;
     padding: flex;

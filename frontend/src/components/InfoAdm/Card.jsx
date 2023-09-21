@@ -12,7 +12,7 @@ function Card({ title, imageUrl, body }) {
                     <h3>{title}</h3>
                 </div>
                 <div className="card-bodya">
-                    {body}
+                    <pam>{body}</pam>
                 </div>
             </div>
             <div className='btna'>
