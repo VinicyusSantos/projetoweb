@@ -44,7 +44,7 @@ export function Solicicacoes() {
   return (
     <div>
       <div className="app-containerjk">
-        <h1 className="cabecalhojk">Digite abaixo sua solicitação</h1>
+        <h1 className="cabecalhojk">SOLICITAÇÕES PESSOAIS</h1>
       </div>
       <div className="Solicitacoesjk">
         <form onSubmit={handleSubmit}>
@@ -77,7 +77,9 @@ export function Solicicacoes() {
                 onChange={handleMotivoChange}
               ></textarea>
             </div>
-            <button type="button">Enviar Solicitação</button>
+            <a href="/info" rel="noopener noreferrer">
+            <button type="button">Enviar solicitação</button>
+            </a>
           </div>
         </form>
       </div>

@@ -31,9 +31,9 @@ function Login() {
 
     } catch (error) {
         if(!error?.response) {
-          setError('Erro ao acessar o servidor');    
+          setError('Erro ao acessar o servidor!');    
         } else if (error.response.status == 401) {
-          setError('Usuário ou senha inválidos')
+          setError('Usuário ou senha inválidos!')
         }
     }
   };
@@ -72,7 +72,7 @@ function Login() {
           <button onClick={(Evento) => handleLogin(Evento)} className="submit">SIGN IN</button>
           </div>
         </div>
-        <p>{error}</p>
+        <plop>{error}</plop>
     </div>
 
   );

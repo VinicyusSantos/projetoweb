@@ -80,7 +80,7 @@ background-color: rgb(20, 0, 0);
 animation: slide-from-bottom-to-top 4s forwards;
 display: inline-block;
 margin-right: 3rem;
-margin-bottom: 3rem;
+height: 39.5rem;
 }
 
 .containerrrjk h2 {
@@ -103,75 +103,88 @@ font-weight: bold;
 margin-bottom: 1rem;
 }
 
-.input-groupjk input,
-.input-groupjk textarea {
+.input-groupjk input {
 padding: 0.4rem;
 margin-left: 1rem;
 margin-right: 1rem;
 box-shadow: 0rem 0rem 0.1rem 0.1rem;
-color: rgb(160, 2, 2);
-border: 0.3rem solid rgb(160, 2, 2);
+color: rgb(255, 0, 0);
+border: 0.3rem solid rgb(255, 0, 0);
 font-size: 1rem;
 }
 
+
 .input-groupjk textarea {
-min-height: 4rem;
-max-height: 4rem;
-min-width: 26.6rem;
-max-width: 26.6rem;
-background-color: transparent;
-}
+  padding: 0.4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  box-shadow: 0rem 0rem 0.1rem 0.1rem rgb(160, 2, 2);
+  color: rgb(253, 250, 250);
+  border: 0.4rem solid rgb(160, 2, 2);
+  font-size: 1.4rem;
+  min-height: 4rem;
+  max-height: 4rem;
+  min-width: 26.6rem;
+  max-width: 26.6rem;
+  background-color: transparent;
+  }
 
 .input-groupjk textarea:hover {
 filter: drop-shadow(0 0 0.2rem rgb(231, 3, 3));
 }
 
 
-button{
+button1{
   padding: 0.5rem;
   background: rgb(77, 2, 2);
-  border: none;
+  border: 0.2rem solid rgb(160, 2, 2);
   transition: 0.2s;
-  margin-bottom: 0.5rem;
   border-radius: 0.5rem;
 }
 
-button:hover{
+button1:hover{
   filter: drop-shadow(0 0 0.4rem rgb(231, 3, 3));
+}
+
+plz1{
+  font-size: 1.4rem;
+  color: white;
+
 }
 
 pz {
 font-size: 1.2rem;
 font-weight: bold;
 margin-bottom: 0.1rem;
+color: white;
 margin-top: 0.1rem;
 display: flex;
 flex-direction: column;
-justify-content: center; /* Centraliza verticalmente */
-align-items: center; /* Centraliza horizontalmente */
-text-align: center; /* Centraliza o texto horizontalmente dentro do elemento */
+justify-content: center; 
+align-items: center; 
+text-align: center; 
 }
 
 #nome::placeholder {
 color: white;
-font-size: 1rem; /* Tamanho da fonte do placeholder */ /* Estilo da fonte do placeholder (itálico) */
+font-size: 1rem; 
 font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 #item::placeholder {
 color: white;
-font-size: 1rem; /* Tamanho da fonte do placeholder */ /* Estilo da fonte do placeholder (itálico) */
+font-size: 1rem; 
 font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 #motivo::placeholder {
 color: white;
-font-size: 1rem; /* Tamanho da fonte do placeholder */ /* Estilo da fonte do placeholder (itálico) */
+font-size: 1rem; 
 font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 #motivo {
-background-color: transparent; /* Define o plano de fundo como transparente para que o texto seja visível */
+background-color: transparent; 
 border: 0.3rem solid rgb(160, 2, 2);
-font-size: 1rem;
+font-size: 1.4rem;
 }
