@@ -1,16 +1,23 @@
-import express from 'express'
+import express from 'express';
 
-export const solicitacoescontroller = express.Router()
+export const solicitacoescontroller = express.Router();
 
-const solicitacoes = [
-]
+const solicitacoes = [];
 
-solicitacoescontroller.post = (req, res) => {
-    const {texto} = req.body;
-    solicitacoes.push(texto);
-    res.status(201).json({ message: 'Texto enviado' });
+solicitacoescontroller.get=(req, res) => {
+  res.json({ solicitacoes });
 };
 
-solicitacoescontroller.get = (req, res) => {
-    res.json({ solicitacoes });
+solicitacoescontroller.post=(req, res) => {
+  const { nome, solicitacao, descricao } = req.body;
+
+  const novaSolicitacao = {
+    nome,
+    solicitacao,
+    descricao,
   };
+
+  solicitacoes.push(novaSolicitacao);
+
+  res.status(201).json(novaSolicitacao);
+};

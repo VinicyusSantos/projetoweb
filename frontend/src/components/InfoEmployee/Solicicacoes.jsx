@@ -7,24 +7,22 @@ import '/src/styles/solicitacoesEmployee.css';
 export function Solicicacoes() {
   const [solici, setSolici] = useState({
     nome: '',
-    descricao: '',
     solicitacao: '',
-  });
+    descricao: '',
 
-  const navigate = useNavigate();
+  });
 
   const handleSubmit = async (evento) => { 
     evento.preventDefault();
 
     try {
-      const response = await axios.post('', solici, {
+      const response = await axios.post('http://localhost:3000/enviando', solici, {
         headers: { 'Content-Type': 'application/json' }
       });
 
       console.log('', response.data);
-      
-      
-      navigate('/outra-pagina'); 
+
+
     } catch (err) {
       console.error('Erro ao enviar a solicitação:', err);
     }
@@ -35,7 +33,7 @@ export function Solicicacoes() {
       <div className="app-container">
         <h1 className="cabecalho">Digite abaixo sua solicitação</h1>
       </div>
-      <div className="solicitacoes">
+      <div className="Solicitacoes">
         <form onSubmit={handleSubmit}>
           <textarea 
             placeholder="Insira seu nome" 
@@ -55,7 +53,7 @@ export function Solicicacoes() {
             value={solici.descricao} 
             onChange={(e) => setSolici({ ...solici, descricao: e.target.value })}
           /> 
-            
+
           <button type="submit" className="submit">Confirmar</button>
         </form>
       </div>

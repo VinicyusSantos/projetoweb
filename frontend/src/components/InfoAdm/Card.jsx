@@ -12,7 +12,7 @@ function Card({ title, imageUrl, body }) {
                     <h3>{title}</h3>
                 </div>
                 <div className="card-bodya">
-                    <ppp>{body}</ppp>
+                    {body}
                 </div>
             </div>
             <div className='btna'>
@@ -27,3 +27,4 @@ function Card({ title, imageUrl, body }) {
 }
 
 export default Card;
+
