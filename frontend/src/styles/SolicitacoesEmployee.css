@@ -1,148 +1,177 @@
+.app-containerjk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+h1 {
+font-size: 4rem;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+background-image: var(--gradient);
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+animation: bounce 1s infinite;
+}
+
+:root {
+font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+line-height: 1.5;
+font-weight: 400;
+
+color-scheme: light dark;
+color: rgba(255, 255, 255, 0.87);
+background-image: radial-gradient(circle, rgb(3, 0, 0), rgb(22, 1, 1));
+
+font-synthesis: none;
+text-rendering: optimizeLegibility;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-webkit-text-size-adjust: 100%;
+
+--gradient: linear-gradient(
+  to right,
+  rgb(255, 0, 0),
+  rgb(255, 94, 0),
+  rgb(255, 94, 0),
+  rgb(255, 0, 0)
+);
+}
+
+a {
+font-weight: 500;
+color: #ff6464;
+text-decoration: inherit;
+}
+
+a:hover {
+color: #535bf2;
+}
+
+body {
+margin: 0;
+display: flex;
+place-items: center;
+min-width: 50rem;
+min-height: 50rem;
+}
+
+@keyframes bounce {
+0%, 100% {
+  transform: translateY(0rem);
+}
+50% {
+  transform: translateY(0.3rem);
+}
+}
 
 
-.app-containerr {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
-  }
-  
-  .centered-h11 {
-    font-size: 6rem;
-    text-align: center;
-    margin-top: -2rem;
-  }
-  
-  .logo {
-    height: 7rem;
-    padding: 1rem;
-    will-change: filter;
-    transition: filter 300ms;
-    filter: drop-shadow(0 0 2em rgb(184, 1, 1));
-  }
-  
-  .logo:hover {
-    filter: drop-shadow(0 0 2em rgb(255, 0, 0));
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    a:nth-of-type(1) .logo {
-      animation: logo-spin infinite 3s linear;
-    }
-  }
-  
-  h1 {
-    font-size: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    background-image: var(--gradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: bounce 1s infinite;
-  }
-  
-  .card {
-    padding: 2em;
-  }
-  
-  :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-  
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-image: radial-gradient(circle, rgb(3, 0, 0), rgb(22, 1, 1));
-  
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-  
-    --gradient: linear-gradient(
-      to right,
-      rgb(255, 0, 0),
-      rgb(255, 94, 0),
-      rgb(255, 94, 0),
-      rgb(255, 0, 0)
-    );
-  }
-  
-  a {
-    font-weight: 500;
-    color: #ff6464;
-    text-decoration: inherit;
-  }
-  
-  a:hover {
-    color: #535bf2;
-  }
-  
-  body {
-    margin: 0;
-    display: flex;
-    place-items: center;
-    min-width: 50rem;
-    min-height: 50rem;
-  }
-  
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0rem);
-    }
-    50% {
-      transform: translateY(0.3rem);
-    }
-  }
-  
-  .obras{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: flex;
-    height: flex;
-    color: rgb(255, 102, 0);
-    background: rgb(22, 1, 1);
-    border-radius: 0.4rem;
-    font-size: 1.5rem;
-    font-weight: 1rem;
-    cursor: pointer;
-    margin-bottom: 0.7rem;
-    margin-top: 0.7rem;
-    margin-left: 0.7rem;
-    margin-right: 0.7rem;
-  }
-  
-  
- 
-  .solic{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: flex;
-    height: flex;
-    color: rgb(255, 102, 0);
-    background: rgb(22, 1, 1);
-    border-radius: 0.4rem;
-    font-size: 1.5rem;
-    font-weight: 1rem;
-    cursor: pointer;
-    margin-bottom: 0.7rem;
-    margin-left: 0.7rem;
-    margin-right: 0.7rem;
-  }
-  
-  .containerrr{
-    display:flex;
-    width: 24rem;
-    height: flex;
-    flex-direction: column;
-    margin: auto;
-    background-image: var(--gradient);
-    padding-bottom: 0.1rem;
-    border-radius: 0.4rem;
-  }
+.containerrrjk{
+width: 30rem;
+overflow: hidden;
+box-shadow: 0rem 0rem 0.3rem 0.3rem;
+transition: 0.3s;
+color:rgb(160, 2, 2);
+border-radius: 1rem;
+background-color: rgb(20, 0, 0);
+animation: slide-from-bottom-to-top 4s forwards;
+display: inline-block;
+margin-right: 3rem;
+margin-bottom: 3rem;
+}
 
+.containerrrjk h2 {
+font-size: 2rem;
+margin-bottom: 2rem;
+margin-top: 2rem;
+color: white;
+text-decoration: underline;
+}
+
+.input-groupjk {
+display: flex;
+flex-direction: column;
+margin-bottom: 1rem;
+}
+
+.input-groupjk label {
+font-size: 1.2rem;
+font-weight: bold;
+margin-bottom: 1rem;
+}
+
+.input-groupjk input,
+.input-groupjk textarea {
+padding: 0.4rem;
+margin-left: 1rem;
+margin-right: 1rem;
+box-shadow: 0rem 0rem 0.1rem 0.1rem;
+color: rgb(160, 2, 2);
+border: 0.3rem solid rgb(160, 2, 2);
+font-size: 1rem;
+}
+
+.input-groupjk textarea {
+min-height: 4rem;
+max-height: 4rem;
+min-width: 26.6rem;
+max-width: 26.6rem;
+background-color: transparent;
+}
+
+.input-groupjk textarea:hover {
+filter: drop-shadow(0 0 0.2rem rgb(231, 3, 3));
+}
+
+
+button{
+  padding: 0.5rem;
+  background: rgb(77, 2, 2);
+  border: none;
+  transition: 0.2s;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+button:hover{
+  filter: drop-shadow(0 0 0.4rem rgb(231, 3, 3));
+}
+
+pz {
+font-size: 1.2rem;
+font-weight: bold;
+margin-bottom: 0.1rem;
+margin-top: 0.1rem;
+display: flex;
+flex-direction: column;
+justify-content: center; /* Centraliza verticalmente */
+align-items: center; /* Centraliza horizontalmente */
+text-align: center; /* Centraliza o texto horizontalmente dentro do elemento */
+}
+
+#nome::placeholder {
+color: white;
+font-size: 1rem; /* Tamanho da fonte do placeholder */ /* Estilo da fonte do placeholder (itálico) */
+font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+#item::placeholder {
+color: white;
+font-size: 1rem; /* Tamanho da fonte do placeholder */ /* Estilo da fonte do placeholder (itálico) */
+font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+#motivo::placeholder {
+color: white;
+font-size: 1rem; /* Tamanho da fonte do placeholder */ /* Estilo da fonte do placeholder (itálico) */
+font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+#motivo {
+background-color: transparent; /* Define o plano de fundo como transparente para que o texto seja visível */
+border: 0.3rem solid rgb(160, 2, 2);
+font-size: 1rem;
+}

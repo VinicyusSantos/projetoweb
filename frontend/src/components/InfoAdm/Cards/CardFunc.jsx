@@ -15,22 +15,22 @@ function CardFunc({ title, imageUrl, body, atributo1, atributo2, atributo3, atri
                     <px>{body}</px>
                 </div>
                 <div className="atributo1">
-                    <pz>{atributo1}</pz>
+                    <pzz>{atributo1}</pzz>
                 </div>
                 <div className="atributo2">
-                    <pz>{atributo2}</pz>
+                    <pzz>{atributo2}</pzz>
                 </div>
                 <div className="atributo3">
-                    <pz>{atributo3}</pz>
+                    <pzz>{atributo3}</pzz>
                 </div>
                 <div className="atributo4">
-                    <pz>{atributo4}</pz>
+                    <pzz>{atributo4}</pzz>
                 </div>
                 <div className="atributo5">
-                    <pz>{atributo5}</pz>
+                    <pzz>{atributo5}</pzz>
                 </div>
             </div>
-            
+
         </div>
     );
 }
